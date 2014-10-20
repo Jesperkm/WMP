@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
     grunt.registerTask('build', ['clean', 'copy', 'styles', 'scripts']);
 
-    grunt.registerTask('styles', ['compass']);
+    grunt.registerTask('styles', ['compass', 'autoprefixer']);
     grunt.registerTask('scripts', ['shell:bower', 'jshint', 'concat', 'uglify']);
 
 
@@ -36,6 +36,14 @@ module.exports = function(grunt) {
                     }
                 ]
             },
+            fonts: {
+                files: [{
+                    expand: true,
+                    cwd: 'bower_components/fontawesome/fonts/',
+                    src: ['*'],
+                    dest: 'build/fonts/'
+                }]
+            },
             php: {
                 files: [{
                     expand: true,
@@ -55,6 +63,13 @@ module.exports = function(grunt) {
                     cssDir: 'build/',
                     outputStyle: 'compressed'
                 }
+            }
+        },
+        // add vendor-prefix to CSS
+        autoprefixer: {
+            client: {
+                src: 'build/style.css',
+                dest: 'build/style.css'
             }
         },
 
@@ -166,17 +181,22 @@ module.exports = function(grunt) {
             }
         }
     });
-
+    
+    // File/Folder handling plugins
     grunt.loadNpmTasks('grunt-shell');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
 
+    // Stylesheet plugins
     grunt.loadNpmTasks('grunt-contrib-compass');
+    grunt.loadNpmTasks('grunt-autoprefixer');
 
+    // Javascript plugins
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
 
+    // Watch plugins
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-contrib-watch');
 };
