@@ -101,7 +101,8 @@ module.exports = function(grunt) {
                 globals: {
                     $: false,
                     jQuery: false,
-                    google: false
+                    google: false,
+                    angular: true
                 }
             },
             grunt: {
@@ -126,9 +127,11 @@ module.exports = function(grunt) {
                 },
                 src: [
                     'bower_components/jquery/dist/jquery.js',
+                    'bower_components/angular/angular.js',
 
                     'src/js/shop.js',
-                    'src/js/scripts.js'
+                    'src/js/scripts.js',
+                    'src/js/app.js'
                 ],
                 dest: 'build/scripts.js'
             }
