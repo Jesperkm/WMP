@@ -12,12 +12,12 @@
 
         <fieldset>
         <label for="name"><i class="fa fa-user"></i></label>
-        <input type="text" name="name" id="name" placeholder="Username" />
+        <input type="text" name="username" id="username" placeholder="Username" />
         </fieldset>
         
         <fieldset>
         <label for="subject"><i class="fa fa-lock"></i></label>
-        <input type="text" name="subject" id="subject" placeholder="Password" />
+        <input type="password" name="password" id="password" placeholder="Password" />
         </fieldset>
 
         <input type="submit" value="Log in" id="submit"/>
