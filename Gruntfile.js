@@ -51,6 +51,14 @@ module.exports = function(grunt) {
                     src: ['**/*.php'],
                     dest: 'build/'
                 }]
+            },
+            html: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/php/partials',
+                    src: ['**/*.html'],
+                    dest: 'build/partials'
+                }]
             }
         },
 
@@ -171,6 +179,13 @@ module.exports = function(grunt) {
             php: {
                 files: ['src/php/**/*.php'],
                 tasks: ['copy:php'],
+                options: {
+                    livereload: true
+                }
+            },
+            html: {
+                files: ['src/php/partials/*.html'],
+                tasks: ['copy:html'],
                 options: {
                     livereload: true
                 }
