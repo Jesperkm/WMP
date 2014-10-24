@@ -110,7 +110,8 @@ module.exports = function(grunt) {
                     $: false,
                     jQuery: false,
                     google: false,
-                    angular: true
+                    angular: true,
+                    config: true
                 }
             },
             grunt: {
@@ -136,6 +137,7 @@ module.exports = function(grunt) {
                 src: [
                     'bower_components/jquery/dist/jquery.js',
                     'bower_components/angular/angular.js',
+                    'bower_components/angular-ui-router/release/angular-ui-router.js',
 
                     'src/js/shop.js',
                     'src/js/scripts.js',
