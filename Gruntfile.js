@@ -55,9 +55,9 @@ module.exports = function(grunt) {
             html: {
                 files: [{
                     expand: true,
-                    cwd: 'src/php/partials',
+                    cwd: 'src/php',
                     src: ['**/*.html'],
-                    dest: 'build/partials'
+                    dest: 'build/'
                 }]
             }
         },
@@ -139,9 +139,9 @@ module.exports = function(grunt) {
                     'bower_components/angular/angular.js',
                     'bower_components/angular-ui-router/release/angular-ui-router.js',
 
-                    'src/js/shop.js',
                     'src/js/scripts.js',
-                    'src/js/app.js'
+                    'src/js/app.js',
+                    'src/js/**/*.js'
                 ],
                 dest: 'build/scripts.js'
             }

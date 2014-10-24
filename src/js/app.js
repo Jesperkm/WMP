@@ -1,29 +1,11 @@
-var app = angular.module('wmp', ['ui.router']);
+var app = angular.module('wmp', [
+    'login-directive',
+    'login-routes'
+]);
 
-app.directive('login', function() {
-    return {
-      restrict: 'E',
-      templateUrl: 'partials/login.html' 
-    };
-});
-
-app.config (['$urlRouterProvider', '$stateProvider', function($urlRouterProvider, $stateProvider) {
+app.config (['$urlRouterProvider', function($urlRouteProvider) {
     //Any unmatched URL - redirect to home
-    $urlRouterProvider.otherwise('/');
-
-    //different states
-    $stateProvider
-        .state('home', {
-            url: '/',
-            templateUrl: 'index.php'
-        })
-        .state('register', {
-            url: '/register',
-            templateUrl: 'partials/register.html'
-        })
-        .state('my-details', {
-            url: '/my-details',
-            templateUrl: 'partials/my-details.html'
-        });
+    $urlRouteProvider.otherwise('/');
 }]);
+
 
