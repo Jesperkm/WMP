@@ -1,10 +1,12 @@
 .DS_Store
 
+build/
+
 .grunt
 node_modules
 bower_components
 
-build/
+
 .sass-cache
 
 *.css
