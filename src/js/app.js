@@ -7,5 +7,3 @@ app.config (['$urlRouterProvider', function($urlRouteProvider) {
     //Any unmatched URL - redirect to home
     $urlRouteProvider.otherwise('/');
 }]);
-
-

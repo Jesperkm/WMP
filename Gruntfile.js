@@ -186,7 +186,7 @@ module.exports = function(grunt) {
                 }
             },
             html: {
-                files: ['src/php/partials/*.html'],
+                files: ['src/php/**/*.html'],
                 tasks: ['copy:html'],
                 options: {
                     livereload: true

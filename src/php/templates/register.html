@@ -1,10 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <h1>register</h1>
-</body>
-</html>
+<header>
+    <div class="headerline green"></div>
+    <div class="headerline dark"></div>
+    <h1>WMP</h1>
+    <h2>Weekly Meal Planner</h2>
+</header>
+
+<div id="register">
+    <div id="register-table">
+        <h1>Register here</h1>
+
+        <form action="#answer-register" class="form clearfix" id="register-form" method="post" autocomplete="off" novalidate>
+
+        <!-- Username input -->
+        <fieldset>
+        <label for="username">Username <span>*</span></label>
+        <br />
+        <input type="text" name="username" id="username" />
+        </fieldset>
+
+        
+        <!-- Password input -->
+        <fieldset>
+        <label for="password">Password <span>*</span></label>
+        <br />
+        <input type="password" name="password" id="password" />
+        </fieldset>
+
+
+        <!-- Password validate input -->
+        <fieldset>
+        <label for="password">Repeat password <span>*</span></label>
+        <br />
+        <input type="password" name="password" id="password-vali" />
+        </fieldset>
+
+
+        <!-- Meal input -->
+        <fieldset>
+        <label for="meal">Favorite Meal</label>
+        <br />
+        <input type="text" name="meal" id="password-two" />
+        </fieldset>
+
+
+        <!-- Description area -->
+        <label for="describe">Describe yourself</label>
+        <br />
+        <textarea class="describe" name="text"></textarea>
+
+
+        <input type="submit" value="Register" id="register"/>
+    </form>
+    <div id="answer-register"></div>
+    </div>
+
+
+    <div id="insta-user">
+        <h1>You:</h1>
+    </div>
+</div>
