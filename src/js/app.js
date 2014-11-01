@@ -1,6 +1,8 @@
 var app = angular.module('wmp', [
     'login-directive',
-    'login-routes'
+    'header-directive',
+    'wmp-routes',
+    'tabController'
 ]);
 
 app.config (['$urlRouterProvider', function($urlRouteProvider) {

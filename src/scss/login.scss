@@ -102,3 +102,7 @@
     text-align: right;
   }
 }
+
+#login fieldset input:focus > #login fieldset label i {
+  color: $emerald;
+}

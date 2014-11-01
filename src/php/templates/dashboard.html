@@ -1,0 +1,72 @@
+<div id="dashboard-wrap" class="clearfix" ng-controller="tabsController as tab">
+    <nav>
+
+        <!-- User logged into WMP -->
+        <div class="user-logged">
+            <div class="user-img">
+                <i class="fa fa-user"></i>
+            </div>
+            <h1>Username</h1>
+        </div>
+        
+
+        <!-- Navigation starts -->
+        <ul>
+
+            <li>
+                <a href ng-click="tab.setTab(1)" ng-class="{active: tab.isSelected(1)}">
+                    <i class="fa fa-home"></i>
+                    Home
+                </a>
+            </li>
+
+            <li>
+                <a href ng-click="tab.setTab(2)" ng-class="{active: tab.isSelected(2)}">
+                    <i class="fa fa-cutlery"></i>
+                    Add Meal
+                </a>   
+            </li>
+
+            <li>
+                <a href ng-click="tab.setTab(3)" ng-class="{active: tab.isSelected(3)}">
+                    <i class="fa fa-calendar"></i>
+                    Weekly Planner
+                </a>   
+            </li>
+
+            <li>
+                <a href ng-click="tab.setTab(4)" ng-class="{active: tab.isSelected(4)}">
+                    <i class="fa fa-list"></i>
+                    Shopping List
+                </a>   
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa fa-unlock-alt"></i>
+                    Log out
+                </a>   
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="content-wrap">
+        <div class="dashboard" ng-show="tab.isSelected(1)">
+          <h1>Dashboard</h1>
+        </div>
+
+        <div class="add-meal" ng-show="tab.isSelected(2)">
+            <h1>Add Meal</h1>
+        </div>
+
+        <div class="weekly-plan" ng-show="tab.isSelected(3)">
+            <h1>Weekly Planner</h1>
+        </div>
+
+        <div class="shopping" ng-show="tab.isSelected(4)">
+            <h1>Shopping List</h1>
+        </div>
+
+    </div>
+</div>

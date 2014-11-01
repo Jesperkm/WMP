@@ -111,7 +111,8 @@ module.exports = function(grunt) {
                     jQuery: false,
                     google: false,
                     angular: true,
-                    config: true
+                    config: true,
+                    console: true
                 }
             },
             grunt: {
