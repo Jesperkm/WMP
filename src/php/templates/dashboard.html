@@ -42,7 +42,7 @@
             </li>
 
             <li>
-                <a href="#">
+                <a ui-sref="home">
                     <i class="fa fa-unlock-alt"></i>
                     Log out
                 </a>   
@@ -52,20 +52,41 @@
     </nav>
 
     <div id="content-wrap">
+        <div class="borders-top">
+            <div class="headerline green"></div>
+            <div class="headerline dark"></div>
+        </div>
+        
+        <!-- Dashboard/Home -->
         <div class="dashboard" ng-show="tab.isSelected(1)">
           <h1>Dashboard</h1>
+          <div class="inner-wrap">
+              
+          </div>
         </div>
-
+        
+        <!-- Add Meal -->
         <div class="add-meal" ng-show="tab.isSelected(2)">
             <h1>Add Meal</h1>
+            <div class="inner-wrap">
+              
+            </div>
         </div>
-
+        
+        <!-- Weekly Plan -->
         <div class="weekly-plan" ng-show="tab.isSelected(3)">
             <h1>Weekly Planner</h1>
+            <div class="inner-wrap">
+              
+            </div>
         </div>
 
+        <!-- Shopping List -->
         <div class="shopping" ng-show="tab.isSelected(4)">
             <h1>Shopping List</h1>
+            <div class="inner-wrap">
+              
+            </div>
         </div>
 
     </div>
