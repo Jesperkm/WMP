@@ -45,6 +45,11 @@
         <input type="text" name="meal" id="password-two" ng-model="favoriteMeal" />
         </fieldset>
 
+        <!-- Upload profile picture -->
+        <fieldset>
+            <input type="file" name="fileToUpload" id="fileToUpload" class="img-upload">
+        </fieldset>
+
 
         <!-- Description area -->
         <label for="describe">Describe yourself</label>
@@ -52,7 +57,7 @@
         <textarea class="describe" name="text" ng-model="describe"></textarea>
 
 
-        <input type="submit" value="Register" id="register"/>
+        <input type="submit" value="Register" class="btn"/>
     </form>
     <div id="answer-register"></div>
     </div>

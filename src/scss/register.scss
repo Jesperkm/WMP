@@ -69,7 +69,7 @@
         }
     }
 
-    #register {
+    .btn {
         width: 100%;
         margin: 20px auto auto auto;
         display: block;
@@ -88,6 +88,26 @@
           opacity: 0.85;
           color: #fff;
         }
+    }
+
+    .img-upload {
+        width: 100%;
+        font-size: 13px;
+        font-family: inherit;
+
+        &::-webkit-file-upload-button {
+            display: block;
+            width: 50%;
+            height: 50px;
+            background: $emerald;
+            color: #fff;
+            font-family: inherit;
+            font-size: 13px;
+            border:none;
+            border-radius: 5px;
+        }
+
+
     }
 }
 
