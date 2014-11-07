@@ -1,7 +1,7 @@
 nav {
     width: 190px;
     height: 100%;
-    background: $midnight-blue;
+    background: $asphalt;
     overflow: hidden;
     position: fixed;
     left: 0;
@@ -17,7 +17,7 @@ nav {
             height: 70px;
             border: 2px solid #fff;
             border-radius: 50%;
-            background: $midnight-blue;
+            background: $asphalt;
             margin: 0 auto;
             text-align: center;
             font-size: 1.5em;
@@ -53,10 +53,12 @@ nav {
                 line-height: 70px;
                 display: block;
                 font-weight: bold;
+                border-bottom: 1px solid $midnight-blue;
 
                 &:hover {
                     color: $emerald;
                     border-left: 4px solid $emerald;
+                    background: $midnight-blue;
                 }
 
                 &:hover > i {
@@ -64,13 +66,14 @@ nav {
                 }
 
                 i {
-                    color: #fff;
+                    color: $silver;
                     padding: 0px 10px 0px 10px;
                 }
             }
 
             .active {
                 color: $emerald;
+                background: $midnight-blue;
                 border-left: 4px solid $emerald;
 
                 i {
