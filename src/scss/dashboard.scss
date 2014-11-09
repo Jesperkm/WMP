@@ -87,7 +87,6 @@ nav {
 
 #content-wrap {
     width: 100%;
-    overflow: hidden;
 
     .borders-top {
         margin-left: 190px;
@@ -103,8 +102,7 @@ nav {
     }
 
     .inner-wrap {
-        width: 100%;
-        overflow: none;
+        width: 960px;
         margin: 0 auto;
         margin-left: 190px;
         margin-top: 80px;
