@@ -94,6 +94,11 @@
         width: 100%;
         font-size: 13px;
         font-family: inherit;
+        margin-top: 20px;
+
+        &:focus {
+            border: none;
+        }
 
         &::-webkit-file-upload-button {
             display: block;
