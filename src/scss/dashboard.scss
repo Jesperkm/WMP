@@ -11,6 +11,8 @@ nav {
     .user-logged {
         width: 100%;
         height: 130px;
+        overflow: hidden;
+        margin-bottom: 30px;
 
         .user-img {
             width: 70px;
@@ -40,7 +42,7 @@ nav {
 
     ul {
         width: 100%;
-        margin-top: 30px;
+        margin-top: 70px;
 
         li {
             height: 70px;

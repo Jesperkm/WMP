@@ -2,13 +2,14 @@
     <nav>
 
         <!-- User logged into WMP -->
-        <div class="user-logged">
-            <div class="user-img">
-                <i class="fa fa-user"></i>
+        <a href ng-click="tab.setTab(5)">
+            <div class="user-logged">
+                <div class="user-img">
+                    <i class="fa fa-user"></i>
+                </div>
+                <h1>Username</h1>
             </div>
-            <h1>Username</h1>
-        </div>
-        
+        </a>
 
         <!-- Navigation starts -->
         <ul>
@@ -91,6 +92,17 @@
             <h1>Shopping List</h1>
             <div class="inner-wrap">
               
+            </div>
+        </div>
+
+        <!-- Shopping List -->
+        <div class="user-profile" ng-show="tab.isSelected(5)">
+            <h1>User Profile</h1>
+            <div class="inner-wrap">
+                <div id="profile-img">
+                </div>
+                <div id="profile-desc">
+                </div>
             </div>
         </div>
 
