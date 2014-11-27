@@ -99,12 +99,63 @@
         <div class="user-profile" ng-show="tab.isSelected(5)">
             <h1>User Profile</h1>
             <div class="inner-wrap">
-                <div id="profile-img">
+
+                <div id="update-profile-img">
+                    <i class="fa fa-user"></i>
                 </div>
-                <div id="profile-desc">
-                </div>
+                
+                <div class="profile-table profile-table-update">
+                    <form action="" id="update-profile" method="post" autocomplete="off" novalidate>
+
+                    <!-- Username input -->
+                    <fieldset>
+                        <label for="username">Username</label>
+                        <br />
+                        <input type="text" name="username" id="username" value="Username" />
+                    </fieldset>
+
+                    
+                    <!-- Password input -->
+                    <fieldset>
+                        <label for="password">Password</label>
+                        <br />
+                        <input type="password" name="password" id="password" />
+                    </fieldset>
+
+
+                    <!-- Password validate input -->
+                    <fieldset>
+                        <label for="password">Repeat password</label>
+                        <br />
+                        <input type="password" name="password" id="password-vali" />
+                    </fieldset>
+
+                    
+                     <!-- Email input -->
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <br />
+                        <input type="text" name="email" value="Emailadress@gmail.com" />
+                    </fieldset>
+
+
+                    <!-- Meal input -->
+                    <fieldset>
+                        <label for="meal">Favorite Meal</label>
+                        <br />
+                        <input type="text" name="meal" value="Pizza" />
+                    </fieldset>
+
+
+                    <!-- Description area -->
+                    <label for="describe">Describe yourself</label>
+                    <br />
+                    <textarea class="describe" name="text" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore nisi quis, excepturi magnam aut quia atque odio recusandae laborum id ullam eos temporibus sit. Culpa eos ipsum, rerum molestias!"></textarea>
+
+
+                    <input type="submit" value="Update" class="btn"/>
+                </form>
             </div>
         </div>
-
     </div>
 </div>

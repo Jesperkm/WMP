@@ -3,7 +3,7 @@
     margin: 0 auto;
 }
 
-#register-table, #insta-user {
+.profile-table-register, #insta-user {
     width: 45%;
     height: auto;
     padding-bottom: 50px;
@@ -18,13 +18,9 @@
     }
 }
 
-#register-table {
+.profile-table {
     font-family: inherit;
     margin-right: 5%;
-
-    form {
-     
-    }
 
     fieldset {
         margin: 20px auto 20px auto;

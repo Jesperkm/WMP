@@ -1,0 +1,20 @@
+#update-profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: $midnight-blue;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 3em;
+    margin-top: 30px;
+
+    i {
+        color: #fff;
+        line-height: 100px;
+    }
+}
+
+.profile-table-update {
+    width: 50%;
+    margin:0 auto;
+}

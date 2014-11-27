@@ -48,6 +48,10 @@ nav {
             height: 70px;
             width: 100%;
 
+            &:nth-child(1) {
+                border-top: 1px solid $midnight-blue;
+            }
+
             a {
                 color: #fff;
                 width: 100%;
@@ -56,11 +60,11 @@ nav {
                 display: block;
                 font-weight: bold;
                 font-size: .9em;
+                position: relative;
                 border-bottom: 1px solid $midnight-blue;
 
                 &:hover {
                     color: $emerald;
-                    border-left: 4px solid $emerald;
                     background: $midnight-blue;
                 }
 
@@ -77,10 +81,22 @@ nav {
             .active {
                 color: $emerald;
                 background: $midnight-blue;
-                border-left: 4px solid $emerald;
 
                 i {
                     color: $emerald;
+                }
+
+                &::after {
+                    content: '';
+                    width: 0; 
+                    height: 0; 
+                    border-top: 8px solid transparent;
+                    border-bottom: 8px solid transparent;
+                    border-right: 10px solid $emerald;
+                    right: 0px;
+                    top: 28px;
+                    position: absolute;
+                    z-index: 9999;
                 }
             }
         }
@@ -93,7 +109,7 @@ nav {
     top: 0;
     right: 0;
     bottom: 0;
-    overflow: hidden;
+    overflow: auto;
 
     h1 {
         color: $midnight-blue;
