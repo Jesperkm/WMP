@@ -109,7 +109,8 @@ nav {
     top: 0;
     right: 0;
     bottom: 0;
-    overflow: auto;
+    overflow-x: hidden;
+    overflow-y: auto;
 
     h1 {
         color: $midnight-blue;
@@ -124,16 +125,5 @@ nav {
         margin: 0 auto;
         margin-top: 80px;
         padding-bottom: 50px;
-
-        .dashboard-widget {
-            float: left;
-            width: 50%;
-
-            h2 {
-                text-align: center;
-                font-size: 1.5em;
-                font-weight: bold;
-            }
-        }
     }
 }
