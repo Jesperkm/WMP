@@ -92,7 +92,7 @@ nav {
                     height: 0; 
                     border-top: 8px solid transparent;
                     border-bottom: 8px solid transparent;
-                    border-right: 10px solid $emerald;
+                    border-right: 10px solid $background-white;
                     right: 0px;
                     top: 28px;
                     position: absolute;
@@ -125,5 +125,21 @@ nav {
         margin: 0 auto;
         margin-top: 80px;
         padding-bottom: 50px;
+    }
+
+    .insert-img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: #2C3E50;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 3em;
+        margin-top: 30px;
+
+        i {
+            color: #fff;
+            line-height: 100px;
+        }
     }
 }

@@ -1,5 +1,9 @@
 <div id="dashboard-wrap" class="clearfix" ng-controller="tabsController as tab">
     <nav>
+        <div class="borders-top">
+            <div class="headerline green"></div>
+            <div class="headerline dark"></div>
+        </div>
 
         <!-- User logged into WMP -->
         <a href ng-click="tab.setTab(5)">
@@ -53,10 +57,6 @@
     </nav>
 
     <div id="content-wrap">
-        <div class="borders-top">
-            <div class="headerline green"></div>
-            <div class="headerline dark"></div>
-        </div>
 
         <!-- Dashboard/Home -->
         <div class="dashboard" ng-show="tab.isSelected(1)">
@@ -86,8 +86,27 @@
         <div class="add-meal" ng-show="tab.isSelected(2)">
             <h1>Add Meal</h1>
             <div class="inner-wrap">
-              
+
+                <div class="insert-img">
+                    <i class="fa fa-cutlery"></i>
+                </div>
+                
+                <div class="profile-table profile-table-update">
+                    <form action="" id="update-profile" method="post" autocomplete="off" novalidate>
+
+                    <!-- Ingredient input -->
+                    <fieldset>
+                        <label for="username">Ingredients</label>
+                        <br />
+                        <input type="text" name="ingredient" id="ingredient" />
+                    </fieldset>
+
+                    <div class="add-ingredient"><p>+</p></div>
+
+                    <input type="submit" value="Add Meal" class="btn"/>
+                </form>
             </div>
+        </div>
         </div>
         
         <!-- Weekly Plan -->
@@ -111,7 +130,7 @@
             <h1>User Profile</h1>
             <div class="inner-wrap">
 
-                <div id="update-profile-img">
+                <div class="insert-img">
                     <i class="fa fa-user"></i>
                 </div>
                 
