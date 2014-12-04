@@ -6,51 +6,43 @@
 
         <form action="#answer-register" class="form clearfix" id="register-form" method="post" autocomplete="off" novalidate>
 
-        <!-- Username input -->
         <fieldset>
+
+            <!-- Username input -->
             <label for="username">Username <span>*</span></label>
             <br />
             <input type="text" name="username" id="username" ng-model="user" />
-        </fieldset>
 
         
-        <!-- Password input -->
-        <fieldset>
+            <!-- Password input -->
             <label for="password">Password <span>*</span></label>
             <br />
             <input type="password" name="password" id="password" />
-        </fieldset>
 
 
-        <!-- Password validate input -->
-        <fieldset>
+            <!-- Password validate input -->
             <label for="password">Repeat password <span>*</span></label>
             <br />
             <input type="password" name="password" id="password-vali" />
-        </fieldset>
 
         
-         <!-- Email input -->
-        <fieldset>
+            <!-- Email input -->
             <label for="email">Email <span>*</span></label>
             <br />
             <input type="text" name="email" ng-model="email" />
-        </fieldset>
 
 
-        <!-- Meal input -->
-        <fieldset>
+            <!-- Meal input -->
             <label for="meal">Favorite Meal</label>
             <br />
             <input type="text" name="meal" ng-model="favoriteMeal" />
-        </fieldset>
 
-        <!-- Upload profile picture -->
-        <fieldset>
+            <!-- Upload profile picture -->
             <label for="meal">Upload profile picture</label>
             <br />            
             <input type="file" name="fileToUpload" id="fileToUpload" class="img-upload">
             <input type="submit" value="Upload Image" name="submit" class="btn">
+
         </fieldset>
 
 

@@ -94,16 +94,23 @@
                 <div class="profile-table profile-table-update">
                     <form action="" id="update-profile" method="post" autocomplete="off" novalidate>
 
-                    <!-- Ingredient input -->
                     <fieldset>
-                        <label for="username">Ingredients</label>
+
+                        <!-- Ingredient title -->
+                        <label for="meal-title">Meal title <span>*</span></label>
+                        <input type="text" name="meal-title" id="meal-title" />
+                        
+                        <!-- Ingredient input -->
+                        <label for="ingredient">Ingredients</label>
                         <br />
                         <input type="text" name="ingredient" id="ingredient" />
+                        
+                        <!-- Add ingredient field -->
+                        <div class="add-ingredient"><p>+</p></div>
+
+                        <input type="submit" value="Add Meal" class="btn"/>
+
                     </fieldset>
-
-                    <div class="add-ingredient"><p>+</p></div>
-
-                    <input type="submit" value="Add Meal" class="btn"/>
                 </form>
             </div>
         </div>
@@ -142,35 +149,27 @@
                         <label for="username">Username</label>
                         <br />
                         <input type="text" name="username" id="username" value="Username" />
-                    </fieldset>
 
                     
                     <!-- Password input -->
-                    <fieldset>
                         <label for="password">Password</label>
                         <br />
                         <input type="password" name="password" id="password" />
-                    </fieldset>
 
 
                     <!-- Password validate input -->
-                    <fieldset>
                         <label for="password">Repeat password</label>
                         <br />
                         <input type="password" name="password" id="password-vali" />
-                    </fieldset>
 
                     
                      <!-- Email input -->
-                    <fieldset>
                         <label for="email">Email</label>
                         <br />
                         <input type="text" name="email" value="Emailadress@gmail.com" />
-                    </fieldset>
 
 
                     <!-- Meal input -->
-                    <fieldset>
                         <label for="meal">Favorite Meal</label>
                         <br />
                         <input type="text" name="meal" value="Pizza" />
