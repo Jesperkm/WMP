@@ -58,133 +58,20 @@
 
     <div id="content-wrap">
 
-        <!-- Dashboard/Home -->
-        <div class="dashboard" ng-show="tab.isSelected(1)">
-          <h1>Dashboard</h1>
-          <div class="inner-wrap">
+        <home ng-show="tab.isSelected(1)">
+        </home>
 
-            <div class="dashboard-widget">
-                <h2>Todays Meal</h2>
-                <div class="today-meal">
-                    <img alt="" src="http://placehold.it/600x400/0eafff/ffffff.png" />
-                    <h3>Pizza</h3>
-                </div>
-            </div>
+        <addmeal ng-show="tab.isSelected(2)">
+        </addmeal>
 
-            <div class="dashboard-widget">
-                <h2>Latest meal added</h2>
-                <div class="latest-meal">
-                    <img alt="" src="http://placehold.it/600x400/0eafff/ffffff.png" />
-                    <h3>Lasagne</h3>
-                </div>                
-            </div>
+        <weeklyplanner ng-show="tab.isSelected(3)">
+        </weeklyplanner>
 
-          </div>
-        </div>
+        <shoppinglist ng-show="tab.isSelected(4)">
+        </shoppinglist>
+
+        <updateprofile ng-show="tab.isSelected(5)">
+        </updateprofile>
         
-        <!-- Add Meal -->
-        <div class="add-meal" ng-show="tab.isSelected(2)">
-            <h1>Add Meal</h1>
-            <div class="inner-wrap">
-
-                <div class="insert-img">
-                    <i class="fa fa-cutlery"></i>
-                </div>
-                
-                <div class="profile-table profile-table-update">
-                    <form action="" id="update-profile" method="post" autocomplete="off" novalidate>
-
-                    <fieldset>
-
-                        <!-- Ingredient title -->
-                        <label for="meal-title">Meal title <span>*</span></label>
-                        <input type="text" name="meal-title" id="meal-title" />
-                        
-                        <!-- Ingredient input -->
-                        <label for="ingredient">Ingredients</label>
-                        <br />
-                        <input type="text" name="ingredient" id="ingredient" />
-                        
-                        <!-- Add ingredient field -->
-                        <div class="add-ingredient"><p>+</p></div>
-
-                        <input type="submit" value="Add Meal" class="btn"/>
-
-                    </fieldset>
-                </form>
-            </div>
-        </div>
-        </div>
-        
-        <!-- Weekly Plan -->
-        <div class="weekly-plan" ng-show="tab.isSelected(3)">
-            <h1>Weekly Planner</h1>
-            <div class="inner-wrap">
-              
-            </div>
-        </div>
-
-        <!-- Shopping List -->
-        <div class="shopping" ng-show="tab.isSelected(4)">
-            <h1>Shopping List</h1>
-            <div class="inner-wrap">
-              
-            </div>
-        </div>
-
-        <!-- Shopping List -->
-        <div class="user-profile" ng-show="tab.isSelected(5)">
-            <h1>User Profile</h1>
-            <div class="inner-wrap">
-
-                <div class="insert-img">
-                    <i class="fa fa-user"></i>
-                </div>
-                
-                <div class="profile-table profile-table-update">
-                    <form action="" id="update-profile" method="post" autocomplete="off" novalidate>
-
-                    <!-- Username input -->
-                    <fieldset>
-                        <label for="username">Username</label>
-                        <br />
-                        <input type="text" name="username" id="username" value="Username" />
-
-                    
-                    <!-- Password input -->
-                        <label for="password">Password</label>
-                        <br />
-                        <input type="password" name="password" id="password" />
-
-
-                    <!-- Password validate input -->
-                        <label for="password">Repeat password</label>
-                        <br />
-                        <input type="password" name="password" id="password-vali" />
-
-                    
-                     <!-- Email input -->
-                        <label for="email">Email</label>
-                        <br />
-                        <input type="text" name="email" value="Emailadress@gmail.com" />
-
-
-                    <!-- Meal input -->
-                        <label for="meal">Favorite Meal</label>
-                        <br />
-                        <input type="text" name="meal" value="Pizza" />
-                    </fieldset>
-
-
-                    <!-- Description area -->
-                    <label for="describe">Describe yourself</label>
-                    <br />
-                    <textarea class="describe" name="text" value="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus inventore nisi quis, excepturi magnam aut quia atque odio recusandae laborum id ullam eos temporibus sit. Culpa eos ipsum, rerum molestias!"></textarea>
-
-
-                    <input type="submit" value="Update" class="btn"/>
-                </form>
-            </div>
-        </div>
     </div>
 </div>

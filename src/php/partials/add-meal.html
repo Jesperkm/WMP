@@ -1,0 +1,33 @@
+<!-- Dashboard: Add Meal -->
+<div class="add-meal" ng-show="tab.isSelected(2)">
+    <h1>Add Meal</h1>
+    <div class="inner-wrap">
+
+        <div class="insert-img">
+            <i class="fa fa-cutlery"></i>
+        </div>
+        
+        <div class="profile-table profile-table-update">
+            <form action="" id="update-profile" method="post" autocomplete="off" novalidate>
+
+                <fieldset>
+
+                    <!-- Ingredient title -->
+                    <label for="meal-title">Meal title <span>*</span></label>
+                    <input type="text" name="meal-title" id="meal-title" />
+                    
+                    <!-- Ingredient input -->
+                    <label for="ingredient">Ingredients</label>
+                    <br />
+                    <input type="text" name="ingredient" id="ingredient" />
+                    
+                    <!-- Add ingredient field -->
+                    <div class="add-ingredient"><p>+</p></div>
+
+                    <input type="submit" value="Add Meal" class="btn"/>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
